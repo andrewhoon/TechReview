@@ -18,7 +18,9 @@
                 
                 <div class="caption">
                     <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
-                    <p>...</p>
+                    <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
+                    <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                    <p><span class="label lable-danger" id="costfont">@Html.DisplayNameFor(model => model.Cost)</span><strong>@Html.DisplayFor(modelItem => item.Cost)</strong></p>
                     <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                 </div>
             </div>
