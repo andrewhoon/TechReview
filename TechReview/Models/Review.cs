@@ -11,9 +11,12 @@ namespace TechReview.Models
     {
         [Key]
         public int ID { get; set; }
+        [Display (Name = "Reviewed Product")]
         public string Title { get; set; }
+        [Display(Name = "User Review")]
         public string Content { get; set; }
         public double Cost { get; set; }
+        [Display(Name = "Date of Review")]
         public DateTime PublishDate { get; set; }
 
         [ForeignKey("Category")]

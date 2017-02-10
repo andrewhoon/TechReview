@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using TechReview.Models;
 
-namespace TechReview
+namespace TechReview.Controllers
 {
     public class CategoriesController : Controller
     {
