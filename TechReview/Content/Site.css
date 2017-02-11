@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-color:lightgrey;
+    font-family:Courier New, Courier, monospace;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,16 +24,24 @@ select,
 textarea {
     max-width: 280px;
 }
+/*setting colors to light to keep the text more readable*/
 #indexpage{
-    background-color:lightgrey;
+    background-color:lightgrey; 
 }
+/*product listing is the thumbnail with the rows in index view*/
 #productlisting{
     background-color:lightblue;
+    width:500px;
+    height:350px;
+    font-size:16px;
+    max-width:400px;
+    line-break:auto;  
 }
 #costfont{
     color:darkgreen;
     font-size:16px;
 }
+/*Set page header as darker for styling. Changed font to white for readability*/
 #reviewpageheader{
     background-color:darkslateblue;
     color:white;
@@ -46,10 +55,36 @@ textarea {
     background-color:lightcyan;
     font-size:18px;
 }
+/*Set footer to black as i thought it looked better*/
 #footy{
+    text-align:center;
     background-color:black;
     color:white;
 }
+/*This make the button rounded. I just thought it was neat.*/
 #emailbutton{
     border-radius:50%;
+}
+/*detaillead and detailreview are the rows on the details page*/
+#detaillead{
+    background-color:lightblue;
+}
+#detailreview{
+    background-color:azure;
+}
+#detailheader{
+    font-size:30px;
+}
+#detailcontent{
+    font-size:20px;
+}
+/*speakers are a part of an ad*/
+#speakers img{
+    max-height:450px;
+    max-width:450px;
+}
+#speakers{
+    background-color:red;
+    color:blue;
+    font-family:'Comic Sans MS';
 }

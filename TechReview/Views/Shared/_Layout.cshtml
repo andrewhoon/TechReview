@@ -8,6 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <!--Changed the navbar to stick to the top and to container fluid to fill out screen-->
     <nav class="navbar navbar-default navbar-fixed-top" id="navvy">
         <div class="container-fluid">
              <div class="navbar-header">
@@ -19,6 +20,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <!--Create New and List buttons work while in the create and index page-->
                     <li>@Html.ActionLink("Create New", "Create")</li>
                     <li>@Html.ActionLink("List", "Index")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
@@ -31,6 +33,7 @@
         @RenderBody()
         <hr />
     </div>
+    <!--New Footer, fixed to bottom-->
     <footer>
         <nav class="navbar navbar-default navbar-fixed-bottom" id="footy">
             <ul class="nav navbar-nav">

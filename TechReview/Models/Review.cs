@@ -9,7 +9,7 @@ namespace TechReview.Models
 {
     public class Review
     {
-        [Key]
+        [Key]   //these will be our main variables for our tech review site
         public int ID { get; set; }
         [Display (Name = "Reviewed Product")]
         public string Title { get; set; }
@@ -19,7 +19,7 @@ namespace TechReview.Models
         [Display(Name = "Date of Review")]
         public DateTime PublishDate { get; set; }
 
-        [ForeignKey("Category")]
+        [ForeignKey("Category")]    //this will enable the category to be a drop down or select types of devices our site reviews
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }

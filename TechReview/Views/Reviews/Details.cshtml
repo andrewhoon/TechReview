@@ -4,14 +4,14 @@
     ViewBag.Title = "Details";
 }
 
-<div class="row">
+<div class="row">   <!--For Details page i wanted each row to be larger for readability-->
     <div class="col-lg-12">
         <div class="thumbnail">
             
-            <div class="caption">
-                <h3>@Html.DisplayFor(model => model.Title)</h3>
+            <div class="caption" id="detaillead"> <!--Top row will display name, category, and price-->
+                <h2 id="detailheader">@Html.DisplayFor(model => model.Title)</h2> <!--first row will have name, category, and cost-->
                 <p>@Html.DisplayFor(model => model.Category.Name)</p>
-                <p>@Html.DisplayFor(model => model.Cost)</p>
+                <p>$@Html.DisplayFor(model => model.Cost)</p>
             </div>
         </div>
     </div>
@@ -21,67 +21,32 @@
     <div class="col-lg-12">
         <div class="thumbnail">
 
-            <div class="caption">
-                <p>@Html.DisplayFor(model => model.Content)</p>
+            <div class="caption" id="detailreview"> <!--second row will display actual review and review date-->
+                <p id="detailcontent">@Html.DisplayFor(model => model.Content)</p> <!--second row will have actual review and review date-->
                 <p>@Html.DisplayFor(model => model.PublishDate)</p>
-               
-                @Html.ActionLink("Create New", "Create")
-                @Html.ActionLink("List", "Index")
-                @Html.ActionLink("Contact", "Contact", "Home")
+
+               <p> @Html.ActionLink("Create New", "Create")   @Html.ActionLink("List", "Index")   @Html.ActionLink("Contact", "Contact", "Home")</p>
             </div>
-            </div>
+           </div>
+      </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="thumbnail" id="advertisement"> <!--third row is an ad to get others to advertise with us-->
+            <h1>Your Advertisement Here!</h1>
+            <p>Contact me to get your ad in front of 10's of people a day!</p>
+         
         </div>
     </div>
 </div>
-@*<h2>Details</h2>
 
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Cost)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Cost)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
-
-    </dl>
+<div class="row" id="speakers"> <!--fourth row is advertising speakers to Daniel, our target audience-->
+    <div class="col-lg-12">
+        <div class="thumbnail" id="advertisement">
+            <h1>Speakers for Sale For Real!</h1>
+            <p>Hurry and get them!</p>
+          <p><img src="~/Content/Photos/Speakers1.JPG" /> <img src="~/Content/Photos/Speakers2.JPG" /></p>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>*@
