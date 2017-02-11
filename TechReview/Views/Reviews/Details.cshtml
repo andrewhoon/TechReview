@@ -4,7 +4,36 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="thumbnail">
+            
+            <div class="caption">
+                <h3>@Html.DisplayFor(model => model.Title)</h3>
+                <p>@Html.DisplayFor(model => model.Category.Name)</p>
+                <p>@Html.DisplayFor(model => model.Cost)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="thumbnail">
+
+            <div class="caption">
+                <p>@Html.DisplayFor(model => model.Content)</p>
+                <p>@Html.DisplayFor(model => model.PublishDate)</p>
+               
+                @Html.ActionLink("Create New", "Create")
+                @Html.ActionLink("List", "Index")
+                @Html.ActionLink("Contact", "Contact", "Home")
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<h2>Details</h2>
 
 <div>
     <h4>Review</h4>
@@ -55,4 +84,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@

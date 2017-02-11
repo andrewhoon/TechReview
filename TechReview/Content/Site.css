@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:lightgrey;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,10 +23,33 @@ select,
 textarea {
     max-width: 280px;
 }
+#indexpage{
+    background-color:lightgrey;
+}
 #productlisting{
     background-color:lightblue;
 }
 #costfont{
     color:darkgreen;
     font-size:16px;
+}
+#reviewpageheader{
+    background-color:darkslateblue;
+    color:white;
+    font-size:28px;
+}
+#subheader{
+    color:lightgrey;
+    font-size:16px;
+}
+#navvy{
+    background-color:lightcyan;
+    font-size:18px;
+}
+#footy{
+    background-color:black;
+    color:white;
+}
+#emailbutton{
+    border-radius:50%;
 }

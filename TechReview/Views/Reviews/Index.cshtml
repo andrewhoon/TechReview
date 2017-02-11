@@ -4,7 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div id="indexpage">
+<div class="page-header" id="reviewpageheader">
+    <h1>User Reviews </h1>
+    <small id="subheader">Please read user reviews or submit your own!</small>
+    
+</div>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -21,8 +26,10 @@
                     <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
                     <p>@Html.DisplayFor(modelItem => item.Content)</p>
                     <p><span class="label lable-danger" id="costfont">@Html.DisplayNameFor(model => model.Cost)</span><strong>@Html.DisplayFor(modelItem => item.Cost)</strong></p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
+              @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-success", role = "button" }) <!--These three will get their own buttons-->
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-primary", role = "button" }) 
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger", role = "button" })
+                  </div>
             </div>
 
 
@@ -31,7 +38,7 @@
         </div>
     }
 </div>
-
+</div>
 
 
 @*<table class="table">
